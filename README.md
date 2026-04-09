@@ -13,6 +13,14 @@ Signal is a feedback intelligence dashboard built for product managers who are d
 
 🔗 [signal.victoriacheung0304.workers.dev](https://signal.victoriacheung0304.workers.dev/)
 
+## Built With
+
+- [Cloudflare Workers](https://workers.cloudflare.com/) — edge compute runtime
+- [Cloudflare D1](https://developers.cloudflare.com/d1/) — serverless SQLite database
+- [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) — inference on `@cf/meta/llama-3.1-8b-instruct`
+- [Cloudflare KV](https://developers.cloudflare.com/kv/) — low-latency key-value cache
+- [TypeScript](https://www.typescriptlang.org/) — end-to-end type safety across Worker, database bindings, and AI responses
+
 ## Features
 
 - **AI-powered digest** — Llama 3.1 analyzes all feedback for the selected time window and surfaces the top 3 themes with specific, actionable summaries grounded in real user quotes
@@ -32,13 +40,6 @@ Signal is a feedback intelligence dashboard built for product managers who are d
 | AI | Workers AI — Llama 3.1 8B | Analyzes per-theme feedback excerpts and generates actionable digest summaries |
 | Cache | KV | Caches generated digests per time window to avoid redundant AI calls on every page load |
 
-## Built With
-
-- [Cloudflare Workers](https://workers.cloudflare.com/) — edge compute runtime
-- [Cloudflare D1](https://developers.cloudflare.com/d1/) — serverless SQLite database
-- [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) — inference on `@cf/meta/llama-3.1-8b-instruct`
-- [Cloudflare KV](https://developers.cloudflare.com/kv/) — low-latency key-value cache
-- [TypeScript](https://www.typescriptlang.org/) — end-to-end type safety across Worker, database bindings, and AI responses
 
 ## Local Development
 
